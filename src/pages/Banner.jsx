@@ -64,7 +64,7 @@ function Banner() {
   };
 
   return (
-    <div className="banner">
+    <div id='banner' className="banner">
       <div className="movie">
         <img
           src={activeMovie ? `https://image.tmdb.org/t/p/original${activeMovie.backdrop_path}` : bgImg}

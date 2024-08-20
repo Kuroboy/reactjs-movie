@@ -28,7 +28,10 @@ function SearchMovies() {
 
   return (
     <div className="search-movies">
-      <Search onSearch={setQuery} />
+      <Search 
+        onSearch={setQuery}
+        name = "Search"
+      />
       {query && (
         <div className="results-dropdown">
           {movies.map(movie => (

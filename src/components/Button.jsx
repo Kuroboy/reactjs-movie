@@ -7,8 +7,8 @@ function Button({icon, name, bgcolor, color}) {
         href='/#' 
         className="mainBtn"
         style={{
-                backgournd:bgcolor,
-                color:color                
+                color:color,
+                backgroundColor: bgcolor          
             }}>
         {icon}{name}
     </a>

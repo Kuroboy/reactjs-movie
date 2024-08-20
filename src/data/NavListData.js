@@ -1,19 +1,19 @@
 const navListData =[
     {
         _id : 1,
-        Link : "#",
+        Link : "#banner",
         name : "home",
         active : true,
     },
     {
         _id : 2,
-        Link : "/schedule",
+        Link : "#schedule",
         name : "schedule",
         active : false,
     },
     {
         _id : 3,
-        Link : "/populer",
+        Link : "#populer",
         name : "populer",
         active : false,
     },
