@@ -5,6 +5,7 @@ import './style/header.css'
 import Search from '../components/Search'
 import Button from '../components/Button'
 import SearchMovies from './SearchMovies'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -20,10 +21,13 @@ const Header = () => {
             }
         </ul>
         <SearchMovies/>
-        <Button
-            icon={<ion-icon name="log-out-outline"></ion-icon>}
-            name='Sign In'
-        />
+        <Link to ='/login'>
+            <Button
+                icon={<ion-icon name="log-out-outline"></ion-icon>}
+                name='Sign In'
+                bgcolor='#ff3700'
+            />
+        </Link>
     </header>
   )
 }

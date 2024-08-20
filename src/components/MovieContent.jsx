@@ -32,6 +32,7 @@ function MovieContent({ movie }) {
         <Button
           icon={<ion-icon name="add-outline"></ion-icon>}
           name='Favorite'
+          bgcolor="#ff3700"
         />
       </div>
     </div>

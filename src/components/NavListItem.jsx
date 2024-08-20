@@ -1,10 +1,12 @@
 import React from 'react'
 import './style/navListItem.css'
 
-function NavListItem({nav}) {
+const NavListItem = ({ nav }) => {
   return (
-    <li><a href={nav.link}>{nav.name}</a></li>
-  )
-}
+      <li className={nav.active ? 'active' : ''}>
+          <a href={nav.Link}>{nav.name}</a>
+      </li>
+  ); 
+};
 
-export default NavListItem
+export default NavListItem;

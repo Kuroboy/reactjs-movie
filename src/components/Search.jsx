@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style/search.css';
 
-function Search({ onSearch }) {
+function Search({ onSearch, name }) {
   const [query, setQuery] = useState('');
 
   const handleChange = (e) => {
@@ -13,7 +13,7 @@ function Search({ onSearch }) {
     <div className='search'>
       <input 
         type="text" 
-        placeholder='Search'
+        placeholder={name}
         value={query}
         onChange={handleChange}
       />
